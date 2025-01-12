@@ -1,0 +1,96 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  font-family: Arial, sans-serif;
+}
+
+/* Brand Logo */
+.navbar-brand {
+  color: #0d47a1;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Navbar Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #1976d2;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  top: 25px;
+  left: 0;
+  min-width: 150px;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+  color: #1976d2;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Sign In Button */
+.sign-in-btn {
+  background-color: #1976d2;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.sign-in-btn:hover {
+  background-color: #0d47a1;
+}
